@@ -18,5 +18,19 @@ def solve_part_one():
 
     print(f'The total difference is {total_difference}')
 
+def solve_part_two():
+    ''' Solve part two of the puzzle. '''
+
+    input = read_puzzle_input('input.dat')
+
+    left_nums = sorted([int(line.split()[0]) for line in input.split('\n')])
+    right_nums = sorted([int(line.split()[1]) for line in input.split('\n')])
+
+    similarity_score = 0
+    for n in left_nums:
+        similarity_score += n * right_nums.count(n)
+
+    print(f'The similarity score is: {similarity_score}')
+
 if __name__ == '__main__':
-    solve_part_one()
+    solve_part_two()

@@ -1,9 +1,9 @@
-from puzzle_loader import read_puzzle_input
+from puzzle_reader import read_puzzle
 
 def solve_part_one():
     ''' Solve part one of the puzzle. '''
 
-    input = read_puzzle_input('input.dat')
+    input = read_puzzle('input.dat')
 
     left_nums = sorted([int(line.split()[0]) for line in input.split('\n')])
     right_nums = sorted([int(line.split()[1]) for line in input.split('\n')])
@@ -21,7 +21,7 @@ def solve_part_one():
 def solve_part_two():
     ''' Solve part two of the puzzle. '''
 
-    input = read_puzzle_input('input.dat')
+    input = read_puzzle('input.dat')
 
     left_nums = sorted([int(line.split()[0]) for line in input.split('\n')])
     right_nums = sorted([int(line.split()[1]) for line in input.split('\n')])

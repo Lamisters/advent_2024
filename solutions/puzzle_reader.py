@@ -1,6 +1,6 @@
 import os
 
-def read_puzzle_input(file_name: str) -> str:
+def read_puzzle(file_name: str) -> str:
     ''' Reads the puzzle input data from the given file and returns the entire
     contents as a string. '''
 
